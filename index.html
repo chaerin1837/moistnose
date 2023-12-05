@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Moistnose </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <a href="main.icon.png"></a>
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css"> 
+
+    <style>
+        /* 스타일을 추가할 수 있는 부분입니다. */
+        .long-search-box {
+            display: flex;
+            align-items: center;
+            width: 50%; /* 검색 칸의 전체 너비를 조절합니다. */
+            margin: 0 auto; /* 가운데 정렬을 위한 마진 설정 */
+            border: 1px solid #ccc; /* 테두리 스타일 설정 */
+            padding: 15px; /* 내부 여백 설정 */
+        }
+
+        .search-input {
+            flex: 1; /* input 엘리먼트가 가능한 한 많은 공간을 차지하도록 설정합니다. */
+            border: none; /* input 테두리 제거 */
+            outline: none; /* input 포커스 효과 제거 */
+            padding: 8px; /* 내부 여백 설정 */
+        }
+
+        .search-button {
+            background-color: #370562; /* 검색 버튼 배경색 */
+            color: #fff; /* 검색 버튼 텍스트 색상 */
+            border: none; /* 검색 버튼 테두리 제거 */
+            padding: 15px; /* 내부 여백 설정 */
+            cursor: pointer /* 커서 스타일 변경 */
+        }
+
+        .circle-button2 {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        margin-right: 50px; /* 원형 버튼 사이의 간격을 조절합니다. 필요에 따라 값을 조정하세요. */
+        border: 2px solid #BFABEC; /* 보라색 테두리 추가 */
+        }
+        .circle-button2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .recommand {
+            background-color: black;
+            width: 600px;
+        }
+   
+    </style>
+
+<style>
+    .btn-circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #BFABEC; /* 초기 색상 */
+        border: none;
+        margin: 0 5px;
+        color: white;
+        font-size: 25px;
+    }
+
+    .btn-circle i {
+        color: #fff; /* 아이콘 색상 */
+    }
+
+    .btn-circle.active {
+        background-color: #370562; /* 눌렀을 때 색상 */
+
+    }
+    
+    .btn-circle:hover{
+        color: white;
+        background-color: #370562;;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // DOMContentLoaded 이벤트가 발생했을 때 실행되는 코드
+        document.getElementById('btn1').addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+
+        document.getElementById('btn2').addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+
+        document.getElementById('btn3').addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
+</script>
+
+</head>
+
+<body>
+
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
+        <a href="index.html" class="navbar-brand ms-lg-5">
+            <h1 class="mb-2 text-uppercase text-dark"><img src="img/icon.png"> </h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">사료/간식</a>
+                <a href="about.html" class="nav-item nav-link">장난감</a>
+                <a href="service.html" class="nav-item nav-link">산책코스</a>
+                <a href="product.html" class="nav-item nav-link">함께가요</a>
+                <a href="product.html" class="nav-item nav-link">게시판</a>
+                <a href="product.html" class="nav-item nav-link">고객센터</a>
+
+                <a href="contact.html" class="nav-item nav-link active nav-contact bg-primary text-white px-5 ms-lg-5"> 마이페이지 <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+
+
+    <div class="container-fluid py-lg-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row justify-content-start">
+                <div class="col-lg-8 text-left text-lg-start">
+                    <h1 class="display-1 text-uppercase text-dark mb-lg-4" style="font-size: 48px; padding-top: 0px;"> 반려동물을 위한<br> 종합 정보 사이트 <span style="color: #BCACE7">촉촉한 코</span> </h1>
+                    <h1 class="text-uppercase text-dark mb-lg-4" style="font-size: 28px">아이들의 촉촉한 코를 위해</h1>
+                </div>
+                <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-3">
+                    <a href="" class="btn btn-outline-dark border-2 py-md-3 px-md-5 me-5"> Start Now </a>
+                    <button type="button" class="btn-play" data-bs-toggle="modal"
+                        data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                        <span></span>
+                    </button>
+                    <h5 class="font-weight-normal text-dark m-0 ms-4 d-none d-sm-block">Play Video</h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Hero End -->
+
+ <!-- Video Modal Start -->
+ <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content rounded-1">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- 16:9 aspect ratio -->
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eDKk4p-YLSg?si=VVQXO2hAqedMVQJS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+<!-- Video Modal End -->
+
+<div class="long-search-box">
+    <input type="text" class="search-input" placeholder="통합 검색 / 무엇을 검색할까요?">
+    <button class="search-button">Search</button>
+</div>
+
+
+    
+    
+
+   
+
+
+    <!-- Products Start -->
+    
+
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase"> 사료 / 간식</h6>
+                <h1 class="display-5 text-uppercase mb-0"> 건강상태별 사료 / 간식 추천 </h1>
+            </div>
+
+            <div class="container-fluid mb-3 pt-2">
+            <div class="d-flex justify-content-center mb-4">
+                <div class="mx-5">
+                <button class="btn btn-circle" id="btn1">
+                    <i class="fas fa-icon1"></i>
+                    심장
+                </button>
+                </div>
+                <div class="mx-5">
+                <button class="btn btn-circle" id="btn2">
+                    <i class="fas fa-icon2"></i>
+                    췌장
+                </button>
+                </div>
+                <div class="mx-5">
+                    <button class="btn btn-circle" id="btn1">
+                        <i class="fas fa-icon1"></i>
+                    관절
+                    </button>
+                    </div>
+                <div class="mx-5">
+                <button class="btn btn-circle" id="btn1">
+                    <i class="fas fa-icon1"></i>
+                    모발
+                </button>
+                </div>
+                <div class="mx-5">
+                    <button class="btn btn-circle" id="btn1">
+                        <i class="fas fa-icon1"></i>
+                    종합
+                    </button>
+                    </div>
+                
+        
+            </div>
+            <div class="owl-carousel product-carousel">
+                <div class="pb-5 일반사료">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/tkfy1.png" alt="">
+                        <h6 class="text-uppercase"> 하이포알러지 </h6>
+                        <h5 class="text-primary mb-0">인섹트업</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5 처방사료">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/tkfy2.png" alt="">
+                        <h6 class="text-uppercase"> 나우 독 프레쉬 </h6>
+                        <h5 class="text-primary mb-0">나우 독</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5 일반사료">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/tkfy3.png" alt="">
+                        <h6 class="text-uppercase">라이트 앤 피트</h6>
+                        <h5 class="text-primary mb-0">아카나</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5 처방사료">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/tkfy4.png" alt="">
+                        <h6 class="text-uppercase">오리지날 캣</h6>
+                        <h5 class="text-primary mb-0">오리젠</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5 일반사료">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/tkfy5.png" alt="">
+                        <h6 class="text-uppercase">캣 그레인프리 치킨 & 완두콩</h6>
+                        <h5 class="text-primary mb-0">퓨어비타</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   <hr>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="border-start border-5 border-primary ps-5 mb-5" style="max-width: 600px;">
+                <h6 class="text-primary text-uppercase"> 건강상태별 간식 추천</h6>
+                <h1 class="display-5 text-uppercase mb-0"> 건강상태별 간식 추천 </h1>
+            </div>
+
+            <div class="container-fluid mb-3 pt-2">
+            <div class="d-flex justify-content-center mb-4">
+                <div class="mx-5">
+                <button class="btn btn-circle" id="btn1">
+                    <i class="fas fa-icon1"></i>
+                    심장
+                </button>
+                </div>
+                <div class="mx-5">
+                <button class="btn btn-circle" id="btn2">
+                    <i class="fas fa-icon2"></i>
+                    췌장
+                </button>
+                </div>
+                <div class="mx-5">
+                    <button class="btn btn-circle" id="btn1">
+                        <i class="fas fa-icon1"></i>
+                    관절
+                    </button>
+                    </div>
+                <div class="mx-5">
+                <button class="btn btn-circle" id="btn1">
+                    <i class="fas fa-icon1"></i>
+                    모발
+                </button>
+                </div>
+                <div class="mx-5">
+                    <button class="btn btn-circle" id="btn1">
+                        <i class="fas fa-icon1"></i>
+                    종합
+                    </button>
+                    </div>
+                
+        
+            </div>
+            <div class="owl-carousel product-carousel">
+                <div class="pb-5 일반사료">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/rkstlr1.png" alt="">
+                        <h6 class="text-uppercase">플랫져키</h6>
+                        <h5 class="text-primary mb-0">비그리</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5 처방사료">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/rkstlr2.png" alt="">
+                        <h6 class="text-uppercase">북어 트릿</h6>
+                        <h5 class="text-primary mb-0">마이베이펫</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5 일반사료">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/rkstlr4.png" alt="">
+                        <h6 class="text-uppercase">북어 큐브 트릿</h6>
+                        <h5 class="text-primary mb-0">뽀시래기</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5 처방사료">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/rkstlr5.png" alt="">
+                        <h6 class="text-uppercase">짜먹는 고양이 간식</h6>
+                        <h5 class="text-primary mb-0">굿밸런스</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-5 일반사료">
+                    <div class="product-item position-relative bg-light d-flex flex-column text-center">
+                        <img class="img-fluid mb-4" src="img/rkstlr6.png" alt="">
+                        <h6 class="text-uppercase">파티믹스 내추럴 참치</h6>
+                        <h5 class="text-primary mb-0">퓨리나</h5>
+                        <div class="btn-action d-flex justify-content-center">
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-cart"></i></a>
+                            <a class="btn btn-primary py-2 px-3" href=""><i class="bi bi-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products End -->
+
+
+    
+
+    
+
+
+    
+
+    
+
+    
+    
+
+     <!-- Footer Start -->
+     <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-uppercase border-start border-5 border-primary ps-3 mb-4"> 고객센터 </h5>
+                    
+                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i> 충청북도 제천시 세명로 65, 첨단정보학관</p>
+                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i> semyung@example.com</p>
+                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i> 02-xxxx-xxxx</p>
+                </div>
+            
+                <div class="col-lg-3 col-md-6">
+                   
+                    <h6 class="text-uppercase mt-4 mb-3">Follow Us</h6>
+                    <div class="d-flex">
+                        <a class="btn btn-outline-purple btn-square me-2" href="#"><i class="bi bi-twitter"></i></a>
+                        <a class="btn btn-outline-purple btn-square me-2" href="#"><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-outline-purple btn-square me-2" href="#"><i class="bi bi-linkedin"></i></a>
+                        <a class="btn btn-outline-purple btn-square" href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 text-center text-body">
+                    <a class="text-body" href="">Terms & Conditions</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Privacy Policy</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Customer Support</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Payments</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">Help</a>
+                    <span class="mx-1">|</span>
+                    <a class="text-body" href="">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-md-0">&copy; <a class="text-white" href="#">Your Site Name</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
